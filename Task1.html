@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function createList()
+     {
+      return (
+        <ul>
+          <li>I phone 14 pro</li>
+          <li>samsung galaxy s23 ultra </li>
+          <li>vivo one 27 pr</li>
+          <li> I phone 12</li>
+        </ul>
+      )
+    }
+    function createPara() {
+      return (
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque itaque incidunt? Qui nulla sint, reprehenderit ea deserunt eius maiores porro expedita esse deleniti ratione beatae delectus dolorum modi quae ut nobis nihil laboriosam fugiat soluta id minima maxime animi </p>
+      );
+    }
+    function fnheading() {
+      return <h2> I am main heading  </h2>;
+    }
+    function Main() {
+      return
+      (<div>
+        <div>{fnheading()}</div>
+        <div>{createList()}{createPara()}</div>
+        <div>{createPara()}{createPara()}</div>
+
+      </div>);
+
+    }
+    ReactDOM.render(Main(), document.getElementById("root"))
+  </script>
+</body>
+
+</html>
